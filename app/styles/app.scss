@@ -1,0 +1,110 @@
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  background: #444;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(0deg, #aaa, #ccc);
+  &>div {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+  }
+  .brand {
+    h2 {
+      margin: 0 5%;
+      color: white;
+      font-size: 3em;
+    }
+  }
+  .nav {
+    text-align: right;
+    ul {
+      height: 50px;
+      margin: 0 auto;
+      list-style-type: none;
+      li {
+        padding: 1% 20px; 
+        display: inline-block;
+        height: 100%;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        color: white;
+        font-size: 1.5em;
+        a { text-decoration: none; }
+        a:visited { color: white; }
+      }
+    }
+  }
+}
+
+#rentals {
+  text-align: center; 
+}
+
+.popper {
+  display: inline-block;
+  position: relative;
+  width: 320px;
+  height: 350px;
+  border: 10px solid black;
+  overflow: hidden;
+  margin: 2%;
+  text-align: left; 
+  box-shadow: 1px 2px 5px #222;
+  .textbar {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-top: 5%;
+    background: linear-gradient(0deg, black 80%, transparent 95%);
+    color: white;
+    .name {
+      font-size: 1.5em;
+    }
+    .price {
+      font-style: italic;
+    }
+    .rent {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .descrip {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    height: 350px;
+    width: 100%;
+    color: white;
+    font-size: 1.1em;
+    background: rgba(100, 100, 100, 0.4);
+    transition: all ease 0.5s;
+  }
+  &:hover .descrip {
+    top: 0px;
+  }
+
+}
+
+footer {
+  width: 80%;
+  border-top: 1px solid #ddd;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+
+

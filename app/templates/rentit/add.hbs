@@ -1,0 +1,16 @@
+<h2>Add Route</h2>
+
+<form {{action "newRental" on="submit"}} class="new-rental">
+  {{input value=itemName class="item-name" placeholder="Item Name"}}
+  <br>
+  {{textarea value=description  class="item-description" placeholder="Description"}}
+  <br>
+  ${{input value=priceCost  type="number" class="item-price" placeholder="00"}} /
+  {{input value=priceInterval class="item-interval" placeholder="Interval"}}
+  <br>
+  {{input value=categories class="item-categories" placeholder="Categories"}}
+  <input type="submit">
+  
+</form>
+
+{{outlet}}

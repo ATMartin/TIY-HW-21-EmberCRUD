@@ -6,6 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('rentit', { path: '/' }, function() {
+    this.route('add');
+    this.route('edit', { path: '/edit/:model_id'});  
+  });
 });
 
 export default Router;

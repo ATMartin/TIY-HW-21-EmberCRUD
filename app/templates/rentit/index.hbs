@@ -1,0 +1,14 @@
+<!-- <button {{action 'popUp'}}>Outer</button> -->
+{{#each rental in model itemController="rental" }}
+  <div class="popper">
+    <img src="http://lorempixel.com/300/300/nature">  
+          <div class="descrip"> {{rental.model.description}} </div>
+    <div class="textbar">
+      <span class="name">{{rental.model.itemName}}</span>
+      <span class="price">${{rental.model.priceCost}} / {{rental.model.priceInterval}}</span>
+      <button {{action 'popUp'}} class="rent">Rent It!</button>
+    </div>
+
+  </div>
+{{/each}}
+{{outlet}}
