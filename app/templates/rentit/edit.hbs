@@ -1,3 +1,8 @@
-<h2>Edit Route</h2>
+<h2> {{input value=model.itemName  }}</h2>
+<img src="http://www.lorempixel.com/300/300/nature">
+<br>
+<p>{{textarea value=model.description }}</p>
+<p>${{input type=number value=model.priceCost }} per {{input value=model.priceInterval }}</p>
+<button {{action "saveEdited"}} class="save">Save</button>
 
 {{outlet}}

@@ -8,7 +8,8 @@ export default Ember.Controller.extend({
         "description": this.get('description'),
         "priceCost": +this.get('priceCost'),
         "priceInterval": this.get('priceInterval'),
-        "categories": this.get('categories').split(' ')
+        "categories": this.get('categories').split(' '),
+        "available": true
       };
       console.log(rental);
       var self = this;

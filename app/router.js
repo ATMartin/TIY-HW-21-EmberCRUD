@@ -8,8 +8,11 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.resource('rentit', { path: '/' }, function() {
     this.route('add');
-    this.route('edit', { path: '/edit/:model_id'});  
+    this.route('edit', { path: '/edit/:objectId'});
+    this.route('view', { path: '/view/:objectId'});
+    this.route('cat', { path: '/cat/:category'});
   });
+  this.route('view');
 });
 
 export default Router;

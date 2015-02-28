@@ -5,5 +5,6 @@ export default DS.Model.extend({
   priceCost: DS.attr('number'),
   priceInterval: DS.attr('string'),
   description: DS.attr('string'),
-  categories: DS.attr()   
+  categories: DS.attr(),
+  available: DS.attr('boolean')  
 });

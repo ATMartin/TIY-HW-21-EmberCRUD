@@ -1,0 +1,9 @@
+<h2> {{ model.itemName  }}</h2>
+<img src="http://www.lorempixel.com/300/300/nature">
+<br>
+<p>{{ model.description }}</p>
+<p>${{ model.priceCost }} per {{ model.priceInterval }}</p>
+<button {{action "confirmRental"}} class="confirm-rental">Rent This</button>
+<button {{action "goToEdit"}} class="edit">Edit</button>
+<button {{action "deleteMe"}} class="delete">Delete</button>
+{{outlet}}
