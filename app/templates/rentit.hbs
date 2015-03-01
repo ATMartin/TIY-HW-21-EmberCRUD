@@ -18,7 +18,11 @@
 
 <div id="categories">
   {{#each cat in allCategories }}
-    <h1>{{cat}}</h1>
+    <span class="category-link">
+      {{#link-to 'rentit.cat' cat}}
+        {{cat}}
+      {{/link-to}}
+    </span>
   {{/each}}
 </div>
 <footer>
