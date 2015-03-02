@@ -12,5 +12,5 @@ export default Ember.ObjectController.extend({
     }).split(',');
     console.log(allCats);
     return allCats;
-  }.property('allCategories')
+  }.property()
 });

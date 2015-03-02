@@ -6,5 +6,5 @@ export default Ember.Route.extend({
   },
   afterModel: function() {
     console.log("Outer index route done!");
-  }
+  },
 });
