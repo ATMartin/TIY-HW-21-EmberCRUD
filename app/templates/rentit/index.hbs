@@ -8,7 +8,21 @@
       <span class="price">${{rental.model.priceCost}} / {{rental.model.priceInterval}}</span>
       <button {{action 'viewDetails'}} class="rent">Learn More</button>
     </div>
-
   </div>
 {{/each}}
+
+<div id="categories">
+  <h3>Categories</h3>
+  <span class="category-link">
+    {{#link-to 'rentit.index'}}All{{/link-to}}
+  </span>
+  {{#each cat in allCategories }}
+    <span class="category-link">
+      {{#link-to 'rentit.cat' cat}}
+        {{cat}}
+      {{/link-to}}
+    </span>
+  {{/each}}
+</div>
+
 {{outlet}}
